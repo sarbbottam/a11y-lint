@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>test - dist</title>
+  </head>
+    <div>
+      <span data-foo="foo">foo</span>
+    </div>
+    <script src="../dist/a11y-lint.js"></script>
+    <script>
+    const engine = new A11yLintEngine({});
+    const context = document.querySelector('span');
+    engine.lint({
+      context
+    });
+    </script>
+</html>

@@ -1,0 +1,45 @@
+{
+  "name": "a11y-lint",
+  "private": true,
+  "version": "0.0.1",
+  "description": "idea for plugable accessibility linter",
+  "main": "src/engine.js",
+  "scripts": {
+    "test": "xo && mocha",
+    "build": "npm t && webpack"
+  },
+  "keywords": [
+    "a11y",
+    "lint",
+    "accessibility",
+    "test"
+  ],
+  "author": "Sarbbottam Bandyopadhyay <sarbbottam@gmail.com> (https://sarbbottam.github.io/)",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^9.8.3",
+    "mocha": "^3.1.2",
+    "webpack": "^1.13.3",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "envs": [
+      "browser",
+      "mocha"
+    ],
+    "esnext": true,
+    "space": true
+  },
+  "dependencies": {
+    "jsdom": "^9.8.3",
+    "xo": "^0.17.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarbbottam/a11y-lint"
+  },
+  "bugs": {
+    "url": "https://github.com/sarbbottam/a11y-lint/issues"
+  },
+  "homepage": "https://github.com/sarbbottam/a11y-lint"
+}
