@@ -21,9 +21,6 @@ class Engine {
     context = document.documentElement,
     reporter = DEFAULT_REPORTER // reporter is a callback function
   } = {}) {
-    if (!context) {
-      throw (new Error('context or root node is mandatory to excute the rules'));
-    }
     const rules = this.rules;
     const result = [];
     const config = this.config;
